@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 19.0-->
+  <ClassId>{f2cbfc1c-e37f-4330-a3dd-12b617a6458f}</ClassId>
+  <ClientId>{f2cbfc1c-e37f-4330-a3dd-12b617a6458f}</ClientId>
+  <DisplayName>CompHoundInv</DisplayName>
+  <Description>CompHoundInv</Description>
+  <Assembly>CompHoundInv.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>18..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>

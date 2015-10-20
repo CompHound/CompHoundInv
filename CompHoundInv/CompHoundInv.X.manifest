@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="CompHoundInv" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{f2cbfc1c-e37f-4330-a3dd-12b617a6458f}" progid="CompHoundInv.StandardAddInServer" threadingModel="Both" name="CompHoundInv.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="CompHoundInv.dll" hashalg="SHA1"></file>
+
+</assembly>
