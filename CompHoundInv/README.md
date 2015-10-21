@@ -4,11 +4,11 @@
 
 2. Copy add-in dll file to one of following locations:
 
-    - Anywhere, then *.addin file <Assembly> setting should be updated to the full path including the dll name
-    - Inventor <InstallPath>\bin\ folder, then *.addin file <Assembly> setting should be the dll name only: <AddInName>.dll
-    - Inventor <InstallPath>\bin\XX folder, then *.addin file <Assembly> setting shoule be a relative path: XX\<AddInName>.dll
+    - Anywhere, then *.addin file <Assembly> setting should be updated to the full path including the dll name.
+    - Inventor <InstallPath>\bin\ folder, then *.addin file <Assembly> setting should be the dll name only: <AddInName>.dll.
+    - Inventor <InstallPath>\bin\XX folder, then *.addin file <Assembly> setting shoule be a relative path: XX\<AddInName>.dll.
 
-3. Copy.addin manifest file to one of following locations:
+3. Copy.addin manifest file to one of the following locations:
 
     - Inventor Version Dependent
     ```
@@ -33,7 +33,7 @@
       Windows7/Vista:
         C:\Users\<user>\AppData\Roaming\Autodesk\Inventor [version]\Addins\
     ```
-    
-4. Startup Inventor; the AddIn should be loaded
+
+4. Startup Inventor; the AddIn should be loaded.
 
 To unregister the AddIn, remove the Autodesk.<AddInName>.Inventor.addin from above mentioned .addin manifest file locations directly.
