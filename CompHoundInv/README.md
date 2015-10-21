@@ -1,5 +1,7 @@
 # How to Register/Unregister
 
+## Register
+
 1. Build Project;
 
 2. Copy add-in dll file to one of following locations:
@@ -23,5 +25,7 @@
         - Windows7/Vista: `C:\Users\<user>\AppData\Roaming\Autodesk\Inventor [version]\Addins\`
 
 4. Startup Inventor; the AddIn should be loaded.
+
+## Unregister
 
 To unregister the AddIn, remove the Autodesk.<AddInName>.Inventor.addin file from the abovementioned .addin manifest file locations.
