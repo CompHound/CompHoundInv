@@ -11,28 +11,16 @@
 3. Copy.addin manifest file to one of the following locations:
 
     - Inventor Version Dependent
-    ```
-      Windows XP:
-        C:\Documents and Settings\All Users\Application Data\Autodesk\Inventor [version]\Addins\
-      Windows7/Vista:
-        C:\ProgramData\Autodesk\Inventor [version]\Addins\
-    ```
+        - Windows XP: `C:\Documents and Settings\All Users\Application Data\Autodesk\Inventor [version]\Addins\`
+        - Windows7/Vista: `C:\ProgramData\Autodesk\Inventor [version]\Addins\`
 
     - Inventor Version Independent
-    ```
-      Windows XP:
-        C:\Documents and Settings\All Users\Application Data\Autodesk\Inventor Addins\
-      Windows7/Vista:
-        C:\ProgramData\Autodesk\Inventor Addins\
-    ```
+        - Windows XP: `C:\Documents and Settings\All Users\Application Data\Autodesk\Inventor Addins\`
+        - Windows7/Vista: `C:\ProgramData\Autodesk\Inventor Addins\`
 
     - Per User Override
-    ```
-      Windows XP:
-        C:\Documents and Settings\<user>\Application Data\Autodesk\Inventor [version]\Addins\
-      Windows7/Vista:
-        C:\Users\<user>\AppData\Roaming\Autodesk\Inventor [version]\Addins\
-    ```
+        - Windows XP: `C:\Documents and Settings\<user>\Application Data\Autodesk\Inventor [version]\Addins\`
+        - Windows7/Vista: `C:\Users\<user>\AppData\Roaming\Autodesk\Inventor [version]\Addins\`
 
 4. Startup Inventor; the AddIn should be loaded.
 
