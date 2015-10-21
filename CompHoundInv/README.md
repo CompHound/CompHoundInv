@@ -2,7 +2,7 @@
 
 ## Register
 
-1. Build project.
+1. Build the project.
 
 2. Copy add-in DLL file to one of following locations:
 
