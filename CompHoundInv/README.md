@@ -2,15 +2,15 @@
 
 ## Register
 
-1. Build Project;
+1. Build project.
 
-2. Copy add-in dll file to one of following locations:
+2. Copy add-in DLL file to one of following locations:
 
-    - Anywhere, then *.addin file <Assembly> setting should be updated to the full path including the dll name.
-    - Inventor `InstallPath\bin\` folder, then *.addin file `<Assembly>` setting should be the dll name only: `AddInName.dll`.
+    - Anywhere, then *.addin file <Assembly> setting should be updated to the full path including the DLL filename.
+    - Inventor `InstallPath\bin\` folder, then *.addin file `<Assembly>` setting should be the DLL name only: `AddInName.dll`.
     - Inventor `\InstallPath\bin\XX\` folder, then *.addin file `<Assembly>` setting shoule be a relative path: `XX\AddInName.dll`.
 
-3. Copy.addin manifest file to one of the following locations:
+3. Copy the .addin manifest file to one of the following locations:
 
     - Inventor Version Dependent
         - Windows XP: `C:\Documents and Settings\All Users\Application Data\Autodesk\Inventor [version]\Addins\`
@@ -24,7 +24,7 @@
         - Windows XP: `C:\Documents and Settings\<user>\Application Data\Autodesk\Inventor [version]\Addins\`
         - Windows7/Vista: `C:\Users\<user>\AppData\Roaming\Autodesk\Inventor [version]\Addins\`
 
-4. Startup Inventor; the AddIn should be loaded.
+4. Start up Inventor; the AddIn will automatically be found and loaded.
 
 ## Unregister
 
