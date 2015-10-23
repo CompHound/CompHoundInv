@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 //
 [assembly: AssemblyTitle("CompHoundInv")]
-[assembly: AssemblyDescription("CompHoundInv")]
+[assembly: AssemblyDescription("CompHound Inventor add-in")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk, Inc.")]
 [assembly: AssemblyProduct("Autodesk Inventor")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("2016.0.0.0")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 
