@@ -8,7 +8,9 @@ using System.Reflection;
 using System.IO;
 using MsgBox = System.Windows.Forms.MessageBox;
 using System.Diagnostics;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using System.Collections;
+using MFU = MultiFileUploader;
 
 namespace CompHoundInv
 {
@@ -24,6 +26,8 @@ namespace CompHoundInv
     // Inventor application object.
     private Inventor.Application m_inventorApplication;
     private Inventor.ButtonDefinition m_commandButton;
+    private string m_clientKey = "<replace with client key>";
+    private string m_clientSecret = "<replace with secret key>";
 
     public StandardAddInServer()
     {
@@ -111,6 +115,19 @@ namespace CompHoundInv
         }
       }
 
+      // Upload files with references
+      ArrayList fileList = new ArrayList();
+      fileList.Add(asm.FullFileName);
+
+      foreach (Document oRefDoc in asm.AllReferencedDocuments)
+      {
+        fileList.Add(oRefDoc.FullDocumentName);
+      }
+
+      MFU.Util u = new MFU.Util("https://developer.api.autodesk.com");
+      string TopLevelAssembly_URN = u.UploadFilesWithReferences(
+        m_clientKey, m_clientSecret, "adamscomphoundbucket", fileList, null, true);
+
       Debug.Print(
           "CompHound uploaded {0} instance{1}.",
           counter, counter > 1 ? "s" : "");
@@ -126,6 +143,7 @@ namespace CompHoundInv
 
       // Release objects.
       m_inventorApplication = null;
+      m_commandButton = null;
 
       GC.Collect();
       GC.WaitForPendingFinalizers();

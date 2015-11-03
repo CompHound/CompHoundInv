@@ -41,8 +41,8 @@ namespace CompHoundInv
       AssemblyDocument asm = occ.ContextDefinition.Document as AssemblyDocument;
 
       // occurrences have no unique ID, only documents have
-      // let's create it based on doc ID + component index
-      string internalName = doc.InternalName + "-" + index.ToString(); // Returns GUID
+      // let's create it based on the top assembly doc ID + component index
+      string internalName = asm.InternalName + "-" + index.ToString(); // Returns GUID + index
       Debug.Print(internalName);
 
       Vector pos = occ.Transformation.Translation;  

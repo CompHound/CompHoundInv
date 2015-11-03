@@ -85,8 +85,12 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic.Compatibility" />
-    <Reference Include="RestSharp">
-      <HintPath>lib\RestSharp.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
@@ -97,6 +101,7 @@
       <Name>System</Name>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +109,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InstanceData.cs" />
+    <Compile Include="MultiFileUploader\MultiFileUploader-Models.cs" />
+    <Compile Include="MultiFileUploader\MultiFileUploader-Util.cs" />
     <Compile Include="StandardAddInServer.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -116,6 +123,7 @@
     <None Include="Autodesk.CompHoundInv.Inventor.addin" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup>
